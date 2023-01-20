@@ -16,7 +16,7 @@ module.exports = {
       });
       res.status(200).json({
         status: true,
-        message: "sucess update data",
+        message: "success update data",
         data: userData,
       });
     } catch (err) {
@@ -26,7 +26,7 @@ module.exports = {
   delete: async (req, res, next) => {
     try {
     } catch (err) {
-      console.log(err);
+      next(err);
     }
   },
 };
